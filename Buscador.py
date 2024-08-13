@@ -37,5 +37,3 @@ if __name__ == "__main__":
     palpite_numerico = 246109
     resultado = busca(nome_arquivo, palpite_numerico)
     print(resultado)
-
-#criar('trilhao.txt', 1000000000000)
