@@ -1,7 +1,7 @@
 # Profiling--Buscador
-O objetivo desse codigo é fazer uma analise do desenpenho de um metodo de busca sequencia em tamanhos direfentes de arquivos, no caso, temos uma busca numericas em arquivos de um milhão, um bilhão e um trilhão de linhas, a estrutura segue sendo um numero por linha. nesse processo será monitorado o gasto de CPU, memoria RAM e tempo de execução, dedicados apenas ao momento da busca pelos arquivos.
+O objetivo deste código é realizar uma análise de desempenho de um método de busca sequencial em diferentes tamanhos de arquivos. Especificamente, estamos realizando uma busca numérica em arquivos com um milhão, um bilhão e um trilhão de linhas. A estrutura do arquivo é um número por linha. Durante o processo, monitoraremos o uso de CPU, memória RAM e tempo de execução dedicados exclusivamente ao momento da busca nos arquivos.
 
-disclaimer: o terceiro arquivo passou de 200GB e mesmo assim a execução não foi concluido, por isso mantive outra versão de 100GB, já que o aquivo completo de tamanho indeterminado, seria inviavel com a maquina usada para a analise.
+**Observação:** A criação do terceiro arquivo excedeu 200 GB e, mesmo assim, a execução não foi concluída. Realizei modificações para otimizá-lo, porém não foram suficientes para efetuar a busca por um trilhão de linhas. Mesmo usando uma lógica diferente, criando vários arquivos menores e descartando-os quando a busca era finalizada sem sucesso, o resultado permaneceu inconclusivo nesse escopo.
 
 Segue o PDF com todos os dados que consegui, com graficos e tabelas de comparação.
-[Profiling - Buscador.pdf](https://github.com/user-attachments/files/16615899/Profiling.-.Buscador.pdf)
+[Profiling - Buscador.pdf](https://github.com/user-attachments/files/16698186/Profiling.-.Buscador.pdf)
