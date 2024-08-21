@@ -1,6 +1,16 @@
 from memory_profiler import profile
 import time
 import psutil
+import random
+
+def criar(nome, maxi):
+    arq = open(nome, 'w')
+
+    for i in range(maxi):
+        num = random.randint(0, maxi)
+        arq.write(str(num) + '\n')
+    arq.close()
+    
 
 @profile    
 def busca():
